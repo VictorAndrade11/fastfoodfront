@@ -11,4 +11,4 @@ Esse projeto faz conexão com uma [API](https://github.com/VictorAndrade11/fastf
 para rodar em modo de desenvolvimento, use o **```yarn```** para instalação dos pacotes, e **```yarn start```** para **iniciar o servidor**
 ##### Obs: O backend tem que está rodando (lembrando de mudar os IP's para localhost caso teste em sua própria máquina).
 
-Para fins de estudos e rapidez, acesse o link para acessar o site já com deploy realizado: <a target="_blank">http://fastfood.freeddns.org/</a>.
+Para fins de estudos e rapidez, acesse o link para acessar o site já com deploy realizado: <a href="#" target="_blank">http://fastfood.freeddns.org/</a>.

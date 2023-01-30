@@ -1,0 +1,33 @@
+
+.center {
+  width: 25px;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: #FFFAFA;
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 3px;
+  margin: 4px 0;
+  transition: 0.5s;
+}
+
+.toggle::after,
+.toggle::before {
+  background-color: #FFFAFA;
+}
+
+.toggle:before {
+  transform: translateY(8px) rotate(135deg);
+}
+
+.toggle:after {
+  transform: translateY(-8px) rotate(-135deg);
+}
+
+.toggle div {
+  transform: scale(0);
+}

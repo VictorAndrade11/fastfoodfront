@@ -1,0 +1,68 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
+  theme: {
+    colors: {
+      green: {
+        50: "#eafee7",
+        100: "#d1fbcc",
+        200: "#a5f89e",
+        300: "#6ff066",
+        400: "#3ee437",
+        500: "#1dca18",
+        600: "#11a10f",
+        700: "#107b11",
+        800: "#125c13",
+        900: "#155217",
+      },
+      red: {
+        50: "#fef2f2",
+        100: "#fee2e2",
+        200: "#fecaca",
+        300: "#fca5a5",
+        400: "#f76464",
+        500: "#ef4444",
+        600: "#dc2626",
+        700: "#b91c1c",
+        800: "#991b1b",
+        900: "#7f1d1d",
+      },
+      yellow: {
+        50: "#fefce8",
+        100: "#fff8c2",
+        200: "#ffeb70",
+        300: "#ffdd45",
+        400: "#fcc913",
+        500: "#ecb006",
+        600: "#cc8702",
+        700: "#a25f06",
+        800: "#864b0d",
+        900: "#723d11",
+      },
+      black: {
+        50: "#bdbdbd",
+        100: "#bdbdbd",
+        200: "#a1a1a1",
+        300: "#7d7d7d",
+        400: "#5c5c5c",
+        500: "#404040",
+        600: "#2b2b2b",
+        700: "#1c1c1c",
+        800: "#121212",
+        900: "#000000",
+      },
+      white: {
+        50: "#ffffff",
+        100: "#fffafa",
+      },
+    },
+    fontFamily: {
+      found: ["Foundry Context", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
+      nunito: ["Nunito", "sans-serif"],
+    },
+
+    extend: {},
+  },
+  plugins: [],
+};

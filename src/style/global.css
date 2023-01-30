@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {font-family: "Foundry Context"; src: url("//db.onlinewebfonts.com/t/fdf00cb631cb3be2942e14b13ea4e71c.eot"); src: url("//db.onlinewebfonts.com/t/fdf00cb631cb3be2942e14b13ea4e71c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fdf00cb631cb3be2942e14b13ea4e71c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fdf00cb631cb3be2942e14b13ea4e71c.woff") format("woff"), url("//db.onlinewebfonts.com/t/fdf00cb631cb3be2942e14b13ea4e71c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fdf00cb631cb3be2942e14b13ea4e71c.svg#Foundry Context") format("svg"); }
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #6ff066;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #155217;
+}

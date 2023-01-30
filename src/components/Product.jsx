@@ -7,7 +7,7 @@ import { IoClose, IoCheckmark } from "react-icons/io5";
 
 // bg-[url('https://static.vecteezy.com/ti/vetor-gratis/t2/5891677-resumo-setas-fitas-coroas-coracoes-explosoes-e-outros-elementos-em-estilo-desenhado-a-mao-para-conceito-design-doodle-ilustracao-modelo-para-decoracao-gratis-vetor.jpg')]
 
-const variants = ["bg-red-400", "bg-green-700", "bg-amber-200"];
+const variants = ["bg-red-400", "bg-green-700", "bg-yellow-200"];
 
 export function Product({ data, variant = 0 }) {
   const processedIngredients = data.description.split(",");
@@ -26,7 +26,7 @@ export function Product({ data, variant = 0 }) {
             <img
               src={
                 data.image
-                  ? `http://127.0.0.1:3333/uploads/${data.image.name}`
+                  ? `http://20.226.76.133:3333/uploads/${data.image.name}`
                   : ""
               }
               className="absolute z-20 top-[30px] left-[20%] w-3/5"
@@ -45,7 +45,7 @@ export function Product({ data, variant = 0 }) {
         </div>
       </button>
       {cart.map((item) => item.productId).includes(data.id) && (
-        <div className="flex w-full h-full bg-green-300/90 rounded-xl absolute top-0 left-0 items-center justify-center">
+        <div className="flex w-full h-full bg-green-300/90 rounded-xl absolute top-0 left-0 items-center justify-center z-30">
           <div className="flex w-14 h-14 rounded-full bg-green-50 items-center justify-center">
             <IoCheckmark className="text-green-800 text-2xl" />
           </div>

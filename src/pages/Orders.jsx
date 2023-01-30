@@ -10,7 +10,7 @@ const Orders = () => {
 
   const handleClick = function (id) {
     return axios
-      .put(`http://localhost:3333/api/orders/${id}`, {
+      .put(`http://20.226.76.133:3333/api/orders/${id}`, {
         status: "FINISHED",
       })
       .then((r) => {
@@ -22,7 +22,7 @@ const Orders = () => {
 
   const finalizedClose = function (id) {
     return axios
-      .put(`http://localhost:3333/api/orders/${id}`, {
+      .put(`http://20.226.76.133:3333/api/orders/${id}`, {
         status: "TODELIVERY",
       })
       .then((r) => {
@@ -33,7 +33,7 @@ const Orders = () => {
   };
 
   const handleClose = function (id) {
-    return axios.delete(`http://localhost:3333/api/orders/${id}`).then(() => {
+    return axios.delete(`http://20.226.76.133:3333/api/orders/${id}`).then(() => {
       const newOrders = orders.filter((order) => order.id !== id);
       setOrders(newOrders.sort((a, b) => a.id - b.id));
     });

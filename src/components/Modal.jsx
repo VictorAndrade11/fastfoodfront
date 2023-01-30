@@ -46,7 +46,7 @@ export const Modal = () => {
     data: product,
     error,
     isLoading,
-  } = useSWR(`http://127.0.0.1:3333/api/products/${productId}`, getFetcher);
+  } = useSWR(`http://20.226.76.133:3333/api/products/${productId}`, getFetcher);
 
   const {
     actions: { addToCart, removeProductFromCart },
@@ -93,7 +93,7 @@ export const Modal = () => {
 
   return (
     <div
-      className="fixed z-30 w-full h-full bg-black-900/50 overflow-y-auto p-10 flex items-baseline justify-center"
+      className="fixed z-40 w-full h-full bg-black-900/50 overflow-y-auto p-10 flex items-baseline justify-center"
       style={{ scrollbarWidth: "none" }}
     >
       {!isLoading && product ? (
@@ -110,7 +110,7 @@ export const Modal = () => {
                 <img
                   src={
                     product.image
-                      ? `http://127.0.0.1:3333/uploads/${product.image.name}`
+                      ? `http://20.226.76.133:3333/uploads/${product.image.name}`
                       : ""
                   }
                   className="absolute z-20 top-[20px] left-[20%] w-3/5"

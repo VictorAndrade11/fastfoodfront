@@ -8,7 +8,7 @@ export function OrdersProvider({ children }) {
   const [orders, setOrders] = useState([]);
 
   const { data, error, isLoading } = useSWR(
-    `http://127.0.0.1:3333/api/orders`,
+    `http://20.226.76.133:3333/api/orders`,
     getFetcher
   );
 

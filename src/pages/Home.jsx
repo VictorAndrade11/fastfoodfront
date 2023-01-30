@@ -65,7 +65,7 @@ export const Home = () => {
   return (
     <>
       {isOpen && <Modal />}
-      <div className="mx-auto w-fit py-4 px-6 font-nunito">
+      <div className="flex flex-col gap-4 mx-auto w-fit py-4 px-6 font-nunito">
         <div className="w-fit mt-8 py-4 mx-auto mb-2 sm:py-12 sm:mx-0">
           <h2 className="text-black-900 font-bold text-lg mb-2 sm:text-xl md:text-2xl md:mb-4 lg:text-3xl text-center sm:text-left">
             Seja bem vindo!
@@ -105,8 +105,9 @@ export const Home = () => {
           </small>
         </div>
         <div className="flex flex-col gap-6">
-          {!productIsLoading ? (
-            arrayToChunk(products, 4).map((chunks, index) => (
+          {!productIsLoading ? (() => {
+            const chunks = arrayToChunk(products, 4)
+            return chunks.map((chunks, index) => (
               <Products
                 key={index}
                 openModal={setIsOpened}
@@ -115,7 +116,7 @@ export const Home = () => {
                 setProductToModal={setProductToModal}
               />
             ))
-          ) : (
+          })() : (
             <div>Carregando...</div>
           )}
         </div>

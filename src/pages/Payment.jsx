@@ -67,7 +67,7 @@ export function Payment() {
         userName: username,
       };
       const { data: order } = await axios.post(
-        "http://127.0.0.1:3333/api/orders",
+        "http://20.226.76.133:3333/api/orders",
         payload
       );
 
